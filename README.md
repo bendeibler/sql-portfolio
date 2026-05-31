@@ -2,10 +2,10 @@
 
 ## Overview
 
-To showcase my SQL skills and techniques, I created an e-commerce database containing 4 tables. This entails setting up a retail database, performing exploratory analysis, and answering business related questions. The database contains 5 categories, 10 customers, 15 products, 15 orders, and 15 order items across 6 different states.
+To showcase my SQL skills and techniques, I created an e-commerce database containing 5 tables. This entails setting up a retail database, performing exploratory analysis, and answering business related questions. The database contains 5 categories, 10 customers, 15 products, 15 orders, and 15 order items across 6 different states.
 
 ## Tools
-- Database: SQL (Oracle APEX)
+- Database: PostgreSQL
 - Editor: VS Code with SQLTools
 
 ## Schema
@@ -14,7 +14,7 @@ To showcase my SQL skills and techniques, I created an e-commerce database conta
 
 - Categories: category_id, category_name, description
   
-- Products: product_id, product_name, price, stock_quantity
+- Products: product_id, product_name, category_id, price, stock_quantity
 
 - Orders: order_id, customer_id, order_date, status
 
@@ -78,7 +78,7 @@ order by price desc;
 ```sql
 select status, count(status)
 from orders
-group by count(status)
+group by status
 order by count(status) desc;
 ```
 
@@ -109,13 +109,13 @@ order by avg(oi.quantity * oi.unit_price) desc;
 
 
 ## Findings
-- There were 4 purchases over $500, and Micheal Williams was 2 of them when he bought a Laptop Pro 16" and an iPhone 15
+- Michael Williams accounted for 2 of the 4 purchases over $500
 - Out of the 6 states, RI, MA, ME, and VT were the most common, all having 2 orders from each
 - Electronics were the most expensive category with 4 out of the top 5 products coming from the electronics category
 - Books were the least expensive with 3 out of the bottom 4 products coming from the books category
 - 12 out of 15 orders have been completed with 2 orders being shipped and 1 still pending
 - Rhode Island had the highest amount purchased with a total 
-of $2389.96 with Massachusetts close behind with a total of $2349.95
+of $2,389.96 with Massachusetts close behind with a total of $2,349.95
 - Rhode Island and Massachusetts also had the highest average purchase with an average of $597.49, and $587.49 respectively
 - Maine and New York came in with the lowest average purchase price showing an average amount of $58.99, and $89.99 respectively
 
