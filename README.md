@@ -113,7 +113,7 @@ order by avg(oi.quantity * oi.unit_price) desc;
 - Out of the 6 states, RI, MA, ME, and VT were the most common, all having 2 orders from each
 - Electronics were the most expensive category with 4 out of the top 5 products coming from the electronics category
 - Books were the least expensive with 3 out of the bottom 4 products coming from the books category
-- 12 out of 15 orders have been completed with 2 orders being shipped and 1 still pending. 
+- 12 out of 15 orders have been completed with 2 orders being shipped and 1 still pending
 - Rhode Island had the highest amount purchased with a total 
 of $2389.96 with Massachusetts close behind with a total of $2349.95
 - Rhode Island and Massachusetts also had the highest average purchase with an average of $597.49, and $587.49 respectively
