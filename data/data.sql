@@ -39,21 +39,21 @@ INSERT INTO products (product_name, category_id, price, stock_quantity) VALUES
 
 -- Orders
 INSERT INTO orders (customer_id, order_date, status) VALUES
-(1, '2024-01-05', 'completed'),
-(2, '2024-01-10', 'completed'),
-(3, '2024-01-15', 'completed'),
-(4, '2024-01-20', 'completed'),
-(5, '2024-02-01', 'completed'),
-(6, '2024-02-10', 'completed'),
-(7, '2024-02-15', 'completed'),
-(8, '2024-03-01', 'completed'),
-(9, '2024-03-10', 'completed'),
-(10, '2024-03-15', 'completed'),
-(1, '2024-03-20', 'completed'),
-(2, '2024-04-01', 'completed'),
-(3, '2024-04-10', 'shipped'),
-(4, '2024-04-15', 'shipped'),
-(5, '2024-04-20', 'pending');
+(1, '2026-01-05', 'completed'),
+(2, '2026-01-10', 'completed'),
+(3, '2026-01-15', 'completed'),
+(4, '2026-01-20', 'completed'),
+(5, '2026-02-01', 'completed'),
+(6, '2026-02-10', 'completed'),
+(7, '2026-02-15', 'completed'),
+(8, '2026-03-01', 'completed'),
+(9, '2026-03-10', 'completed'),
+(10, '2026-03-15', 'completed'),
+(1, '2026-03-20', 'completed'),
+(2, '2026-04-01', 'completed'),
+(3, '2026-04-10', 'shipped'),
+(4, '2026-04-15', 'shipped'),
+(5, '2026-04-20', 'pending');
 
 -- Order Items
 INSERT INTO order_items (order_id, product_id, quantity, unit_price) VALUES
